@@ -3,7 +3,7 @@ The Odin Project: Etch-a-Sketch project
 Source: [The Odin Project - Foundations: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 # Assignment instructions from The Odin Project: Foundations Course
-Don’t forget to commit early and often! You can reference the Commit Messages lesson!
+Don’t forget to commit early and often! You can reference the Commit Messages lesson! ([The Odin Project - Foundations: Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages))
 
 1. Follow our instructions on setting up your project’s GitHub repository ([GitHub repo instructions](https://www.theodinproject.com/lessons/foundations-recipes#setting-up-your-projects-github-repository)).
 
