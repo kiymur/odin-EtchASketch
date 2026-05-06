@@ -25,20 +25,19 @@ gridSizeBtn.addEventListener("click", (e) =>{
     input = parseFloat(input);
 
     if (input > 100) {
-        return input = prompt("Please enter a number that is less than or equal to 100:")
-    } else {
-        container.innerHTML = '';
-
-        let newWidth = ((672/input) - 2);
-        newWidth = newWidth.toString() + "px";
-        
-        for (let i = 0; i < (input*input); i++) {
-            const i = document.createElement("div");
-            i.classList.add("grid");
-            i.style.width = newWidth;
-            container.appendChild(i);
-        }
-
-        hover();
+        input = prompt("Please enter a number that is less than or equal to 100:")
     }
+    container.innerHTML = '';
+
+    let newWidth = ((672/input) - 2);
+    newWidth = newWidth.toString() + "px";
+        
+    for (let i = 0; i < (input*input); i++) {
+        const i = document.createElement("div");
+        i.classList.add("grid");
+        i.style.width = newWidth;
+        container.appendChild(i);
+    }
+
+    hover();
 });
