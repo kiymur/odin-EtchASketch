@@ -5,3 +5,11 @@ for (let i = 0; i < 256; i++) {
     i.classList.add("grid");
     container.appendChild(i);
 }
+
+const grid = document.querySelectorAll(".grid");
+
+grid.forEach((item) => {
+    item.addEventListener("mouseover", (e) => {
+        e.target.style.background = "black";
+    });
+});
