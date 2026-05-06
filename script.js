@@ -13,3 +13,9 @@ grid.forEach((item) => {
         e.target.style.background = "black";
     });
 });
+
+const gridSizeBtn = document.querySelector("#gridSize");
+gridSizeBtn.addEventListener("click", (e) =>{
+    let input = prompt("How many squares wide would you like the grid to be?");
+
+});
