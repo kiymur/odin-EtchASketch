@@ -7,17 +7,17 @@ for (let i = 0; i < 256; i++) {
     container.appendChild(i);
 }
 
-function hover() {
+function hover(colour) {
     const grid = document.querySelectorAll(".grid");
 
     grid.forEach((item) => {
         item.addEventListener("mouseover", (e) => {
-            e.target.style.background = "black";
+            e.target.style.background = colour;
         });
     });
 }
 
-hover();
+hover("black");
 
 const gridSizeBtn = document.querySelector("#gridSize");
 gridSizeBtn.addEventListener("click", (e) =>{
@@ -39,5 +39,20 @@ gridSizeBtn.addEventListener("click", (e) =>{
         container.appendChild(i);
     }
 
-    hover();
+    hover("black");
+});
+
+const rainbowBtn = document.querySelector("#rainbow");
+rainbowBtn.addEventListener("click", (e) => {
+    function randomRGB(e) {
+        return Math.floor(Math.random() * 255);
+    }
+
+    const grid = document.querySelectorAll(".grid");
+
+    grid.forEach((item) => {
+        item.addEventListener("mouseover", (e) => {
+            e.target.style.background = `rgb(${randomRGB(e)}, ${randomRGB(e)}, ${randomRGB(e)})`;
+        });
+    });
 });
